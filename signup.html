@@ -3,29 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eventura - Sign Up</title>
-    <link rel="stylesheet" href="styles2.css">
+    <title>Sign Up - Eventura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('1.png') no-repeat center center;
+            background-size: cover;
+        }
+        .form-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            text-align: center;
+        }
+        h2 {
+            color: #222;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input, select {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #222;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #444;
+        }
+        .login-link {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    <div class="left-panel">
-        <h1>EVENTURA</h1>
-    </div>
-    <div class="right-panel">
-        <div class="form-container">
-            <h2>CREATE ACCOUNT</h2>
-            <form action="index.html" method="GET">
-                <input type="text" placeholder="First Name" required>
-                <input type="text" placeholder="Last Name" required>
-                <input type="text" placeholder="Phone Number" required>
-                <select required>
-                    <option value="">Gender</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-                <button type="submit" class="btn btn-primary">Sign up for Free</button>
-            </form>
-            <a href="#">Log in</a>
+    <div class="form-container">
+        <h2>CREATE ACCOUNT</h2>
+        <form action="index.html">
+            <input type="text" placeholder="Firstname" required>
+            <input type="text" placeholder="Lastname" required>
+            <input type="tel" placeholder="Phone number" required>
+            <select required>
+                <option value="">Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <button type="submit">Sign up</button>
+        </form>
+        <div class="login-link">
+            <a href="login.html">Log in</a>
         </div>
     </div>
 </body>
