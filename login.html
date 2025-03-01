@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="login-container">
-            <h1 class="login-title">LOG IN</h1>
-            <laber for="username">Username</laber>
-            <input type="text" id="username" class="input-fiedl" placeholder="Username">
+    <div class="login-container">
+        <h1 class="login-title">LOG IN</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" class="input-field" placeholder="Username">
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" class="input-field" placeholder="Password">
+        
+        <button class="login-button">Log in</button>
 
-            <label for="password">Password</label>
-            <input type="password" id="password" class="input-field" placeholder="Password">
+        <a href="#" class="forgot-password">Forgot password?</a>
 
-            <button class="login-button">Log in</button>
-            <p class="forgot-password" href="">Forgot Password?</p>
-        </div>
+        <div class="separator">or</div>
 
-    </div>
+        <button class="google-login">
+            <img src="google-icon.png" alt="Google icon"> Log in with Google
+        </button>
 
+        <a href="#" class="signup-link">Sign up</a>
     </div>
 </body>
 </html>
