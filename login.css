@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: url('login.png') no-repeat center center fixed;
+    background-image: url(login.png);
     background-size: cover;
     display: flex;
     flex-direction: column;
