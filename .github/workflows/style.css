@@ -22,9 +22,7 @@ body {
 }
 .navbar a:hover {
     font-weight: bold;
-    font-family: "Shafarik", serif;
-  font-weight: 400;
-  font-style: normal;
+    
 }
 .navbar h2 {
     margin: 0;
@@ -35,6 +33,9 @@ body {
     text-decoration: none;
     color: black;
     margin: 18px;
+    font-family: "Shafarik", serif;
+  font-weight: 400;
+  font-style: normal;
 
 }
 .navbar a:last-of-type {
