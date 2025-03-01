@@ -3,13 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
     <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
-    <div>
+    <div class="login-container">
+        <h1 class="login-title">LOG IN</h1>
+        <label for="username">Username</label>
+        <input type="text" id="username" class="input-field" placeholder="Username">
         
-
-
+        <label for="password">Password</label>
+        <input type="password" id="password" class="input-field" placeholder="Password">
+        
+        <button class="login-button">Log in</button>
+        <p class="forgot-password">Forgot password?</p>
+        
+        <div class="separator">or</div>
+        
+        <button class="google-login">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/512px-Google_%22G%22_Logo.svg.png" alt="Google logo">
+            Log in with Google
+        </button>
+        
+        <p class="signup">Sign up</p>
     </div>
 </body>
+</html>
