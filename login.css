@@ -26,7 +26,7 @@ body {
 
 .event-banner {
     width: 50%;
-2    display: flex;
+   display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
