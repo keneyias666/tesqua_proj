@@ -4,7 +4,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(to right, #d9a7c7, #fffcdc);
     background-image: url(login.png);
 }
 
