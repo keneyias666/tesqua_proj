@@ -1,99 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
     height: 100vh;
     background-image: url(login.png);
-}
-
-.login-container {
-    background: white;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 300px;
-}
-
-.login-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    border: 2px solid #000;
-    display: inline-block;
-    padding: 5px 15px;
-}
-
-.input-field {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 2px solid black;
-    border-radius: 25px;
-}
-
-.login-button {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 25px;
-    background: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-}
-
-.forgot-password {
-    font-size: 12px;
-    margin-top: 5px;
-}
-
-.separator {
-    margin: 10px 0;
-    position: relative;
-}
-
-.separator::before {
-    content: '';
-    width: 40%;
-    height: 1px;
-    background: black;
-    position: absolute;
-    left: 0;
-    top: 50%;
-}
-
-.separator::after {
-    content: '';
-    width: 40%;
-    height: 1px;
-    background: black;
-    position: absolute;
-    right: 0;
-    top: 50%;
-}
-
-.google-login {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    background: white;
+    background-size: cover;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.google-login img {
-    width: 20px;
-}
-
-.signup {
-    font-size: 12px;
-    margin-top: 10px;
-    cursor: pointer;
 }
