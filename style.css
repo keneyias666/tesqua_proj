@@ -60,7 +60,9 @@ body {
 .dropdown {
     position: relative;
     display: inline-block;
-    
+    font-family: "Shafarik", serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .dropdown-content {
