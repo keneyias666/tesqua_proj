@@ -5,16 +5,43 @@ body {
     align-items: center;
     height: 100vh;
     background: linear-gradient(to right, #d9a7c7, #fffcdc);
-    background-image: url(login.png);
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .login-container {
-    background: white;
+    width: 50%;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 300px;
+}
+
+.event-banner {
+    width: 50%;
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.event-banner h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.event-banner p {
+    font-size: 14px;
 }
 
 .login-title {
