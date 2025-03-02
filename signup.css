@@ -1,60 +1,122 @@
-body {
-    font-family: Arial, sans-serif;
-    height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url('1.png') no-repeat center center;
-    background-size: cover;
-}
-.form-container {
-    background: rgba(219, 215, 215, 0.9);
-    padding: 40px;
-    border-radius: 10px; 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 350px;
-    text-align: center;
-}
-h2 {
-    color: #222;
-}
-form {
-    display: flex;
-    flex-direction: column;
-}
-input, select {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    background: #222;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-button:hover {
-    background: #444;
-}
-.login-link {
-    margin-top: 10px;
-}
-a.login-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #526d8a; /* Blue background */
-    color: white; /* White text */
-    text-decoration: none;
-    border-radius: 5px; /* Rounded corners */
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    height: 100vh;
+    background: url('1.png') no-repeat center center/cover;
 }
 
-a.login-link:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+.signup-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    width: 500px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.signup-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 18px;
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.signup-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.signup-button:hover {
+    background: #333;
+}
+
+.separator {
+    position: relative;
+    font-size: 12px;
+    margin: 15px 0;
+    color: #aaa;
+}
+
+.separator::before, .separator::after {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+}
+
+.separator::before {
+    left: 0;
+}
+
+.separator::after {
+    right: 0;
+}
+
+.google-login {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 16px;
+}
+
+.google-login img {
+    width: 16px;
+}
+
+.login-link {
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.login-link a {
+    color: #000;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
 }
