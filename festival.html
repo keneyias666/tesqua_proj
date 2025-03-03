@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .navbar {
+            background-color: #2e2b34;
+            color: #ffffff;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            height: 80vh;
+            padding: 40px;
+            background-color: white;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        /* Dropdown container */
+        .dropdown {
+            position: relative;
+        }
+
+        /* Hidden dropdown content */
+        .dropdown-content {
+            display: none;
+            margin-left: 20px; /* Indent for a nested look */
+        }
+
+        /* Show dropdown on hover */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: white;
+            margin-left: 20px;
+            border-radius: 5px;
+        }
+
+        .event {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .event img {
+            width: 150px;
+            height: 200px;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .register-button {
+            padding: 10px 100px;
+            background-color: lightgray;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div>
+            <strong>EVENTURA</strong>
+            <br><br><br>
+            <a href="#">Events</a>
+            <a href="#">Features ▼</a>
+            <a href="#">Event Types ▼</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>FILTER</h3>
+            <div class="dropdown">
+                <a href="#">Featured ▼</a>
+                <div class="dropdown-content">
+                    <a href="#">Parties</a>
+                    <a href="festivals.html">Festivals</a>
+                    <a href="#">Conferences</a>
+                    <a href="#">Non-Profit Events</a>
+                    <a href="#">Weddings</a>
+                    <a href="#">Reunions</a>
+                    <a href="#">Tournaments/Sporting</a>
+                </div>
+            </div>
+            <br>
+            <a href="#">Create registration event</a>
+        </div>
+
+        <div class="content">
+            <div class="event">
+                <img src="festival-queen.jfif" alt="Festival Queen">
+                <div>
+                    <h3>Festival Queen</h3>
+                    <p>Sinulog Festival: A Journey of Tradition, Spirit and Celebration</p>
+                    <button class="register-button">Register</button>
+                </div>
+            </div>
+
+            <div class="event">
+                <img src="Siomai Festival.jfif" alt="Siomai Festival">
+                <div>
+                    <h3>Siomai Festival</h3>
+                    <p>A Celebration of taste and Tradition.</p>
+                    <button class="register-button">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
