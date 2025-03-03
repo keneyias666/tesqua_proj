@@ -14,7 +14,9 @@ body {
     color: white;
 }
 
-
+h2 {
+    color: #f5f5f5;
+}
 
 .nav-links {
     list-style: none;
