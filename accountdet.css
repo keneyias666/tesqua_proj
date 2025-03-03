@@ -107,6 +107,17 @@ input, select, button {
 }
 
 .recover-icon {
+    width: 40px; /* Adjusted to a reasonable size */
+    height: 40px;
+}
+
+.recover-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recover-container img {
     width: 30px;
     height: 30px;
 }
