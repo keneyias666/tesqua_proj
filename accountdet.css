@@ -81,13 +81,21 @@ input, select, button {
     border: 1px solid #ccc;
 }
 
-button {
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    flex: 1;
     background-color: #555;
     color: white;
     border: none;
     cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
 }
 
-button:hover {
+.buttons button:hover {
     background-color: #333;
 }
