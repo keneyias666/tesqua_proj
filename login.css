@@ -40,9 +40,13 @@ label {
     border-radius: 8px;
 }
 
+.login-button a {
+    color: #000;
+    text-decoration: none;
+}
+
 .login-button {
     text-decoration: none;
-    color: inherit;
     width: 100%;
     padding: 12px;
     font-size: 18px;
