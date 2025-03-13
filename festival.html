@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eventura</title>
+    <link rel="icon" href="letter E.png" 
+        type="image/x-icon">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,6 +29,40 @@
             margin: 0 10px;
         }
 
+        .profile {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-menu {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 40px;
+            background: white;
+            color: black;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            width: 150px;
+            padding: 10px;
+        }
+
+        .profile-menu.active {
+            display: block;
+        }
+
+        .profile-menu a {
+            display: block;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .profile-menu a:hover {
+            background-color: #ddd;
+        }
+
         .container {
             display: flex;
             padding: 20px;
@@ -46,18 +82,17 @@
             padding: 10px;
         }
 
-        /* Dropdown container */
         .dropdown {
             position: relative;
         }
 
-        /* Hidden dropdown content */
+        
         .dropdown-content {
             display: none;
-            margin-left: 20px; /* Indent for a nested look */
+            margin-left: 20px; 
         }
 
-        /* Show dropdown on hover */
+        
         .dropdown:hover .dropdown-content {
             display: block;
         }
@@ -99,11 +134,20 @@
 <body>
     <div class="navbar">
         <div>
-            <strong>EVENTURA</strong>
+            <strong><a href="eventura.html">EVENTURA</a></strong>
             <br><br><br>
-            <a href="#">Events</a>
+            <a href="eventura.html">Events</a>
             <a href="#">Features ▼</a>
             <a href="#">Event Types ▼</a>
+        </div>
+
+        <div class="profile">
+            <a id="profile-button">Pugoy ▼</a>
+            <div class="profile-menu" id="profile-menu">
+                <a href="event_list.html">Manage My Event</a>
+                <a href="accountdet.html">Account Settings</a>
+                <a href="#">Log out</a>
+            </div>
         </div>
     </div>
 
@@ -111,10 +155,10 @@
         <div class="sidebar">
             <h3>FILTER</h3>
             <div class="dropdown">
-                <a href="#">Featured ▼</a>
+                <a href="#" class="dropdown-toggle">Featured ▼</a>
                 <div class="dropdown-content">
                     <a href="#">Parties</a>
-                    <a href="festivals.html">Festivals</a>
+                    <a href="festival.html">Festivals</a>
                     <a href="#">Conferences</a>
                     <a href="#">Non-Profit Events</a>
                     <a href="#">Weddings</a>
@@ -146,5 +190,26 @@
             </div>
         </div>
     </div>
+    <script>
+        // Toggle profile dropdown on click
+        document.getElementById("profile-button").addEventListener("click", function(event) {
+            event.stopPropagation(); // Prevents click from bubbling up
+            document.getElementById("profile-menu").classList.toggle("active");
+        });
+
+        // Close profile menu when clicking outside
+        document.addEventListener("click", function(event) {
+            var profileMenu = document.getElementById("profile-menu");
+            if (!event.target.closest(".profile")) {
+                profileMenu.classList.remove("active");
+            }
+        });
+
+        // Toggle sidebar dropdown when clicked
+        document.querySelector(".dropdown-toggle").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevents jumping to top of page
+            event.target.closest(".dropdown").classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
