@@ -53,6 +53,7 @@ body {
 }
 
 .btn-secondary {
+    text-decoration: none;
     background-color: #e5e7eb;
     color: black;
 }
