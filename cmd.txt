@@ -1,0 +1,4 @@
+npm init -y
+npm install express cors body-parser fs
+cd C:\Users\Lyza\Desktop\Ngthino\uc shiits\testqua\tesqua_proj-main *file path*
+node server.js
