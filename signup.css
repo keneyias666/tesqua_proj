@@ -89,23 +89,7 @@ label {
     right: 0;
 }
 
-.google-login {
-    width: 100%;
-    padding: 12px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    font-size: 16px;
-}
 
-.google-login img {
-    width: 16px;
-}
 
 .login-link {
     font-size: 16px;

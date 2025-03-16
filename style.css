@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 10px 520px;
+    padding: 10px 527px;
     content: initial;
     background-color: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -48,13 +48,21 @@ body {
 }
 
 .btn-primary {
+    text-decoration: none;
     background-color: #273346;
     color: white;
 }
 
+
 .btn-secondary {
+    text-decoration: none;
     background-color: #e5e7eb;
     color: black;
+}
+
+.btn-secondary a {
+    text-decoration: none;
+    
 }
 
 /* Dropdown */
