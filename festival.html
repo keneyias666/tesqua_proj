@@ -105,14 +105,43 @@
             border-radius: 5px;
         }
 
+        .register-button {
+            display: inline-block; /* Ensures the button fits content but maintains structure */
+            width: 200px; /* Fixed width for all buttons */
+            padding: 12px 0; /* Ensures equal height */
+            background-color: #007bff; /* Blue color */
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px; /* Rounded corners */
+            text-align: center;
+            transition: background 0.3s ease-in-out, transform 0.1s ease-in-out;
+        }
+
+        .register-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+
+        .register-button:active {
+            transform: scale(0.98); /* Slight press effect */
+        }
+
+        /* Ensure the container flex aligns buttons properly */
         .event {
             display: flex;
             align-items: center;
-            margin-bottom: 20px;
-            padding: 10px;
+            justify-content: space-between; /* Ensures spacing is even */
+            width: 100%;
+            padding: 15px;
             background: #fff;
             border-radius: 5px;
             box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .event div {
+            flex: 1; /* Ensures consistent width */
         }
 
         .event img {
@@ -120,15 +149,10 @@
             height: 200px;
             border-radius: 5px;
             margin-right: 20px;
+            object-fit: cover; /* Ensures image consistency */
         }
 
-        .register-button {
-            padding: 10px 100px;
-            background-color: lightgray;
-            border: none;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+
     </style>
 </head>
 <body>
