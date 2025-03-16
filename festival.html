@@ -191,25 +191,41 @@
         </div>
     </div>
     <script>
-        // Toggle profile dropdown on click
-        document.getElementById("profile-button").addEventListener("click", function(event) {
-            event.stopPropagation(); // Prevents click from bubbling up
-            document.getElementById("profile-menu").classList.toggle("active");
-        });
+    // Toggle profile dropdown on click
+    document.getElementById("profile-button").addEventListener("click", function(event) {
+        event.stopPropagation();
+        document.getElementById("profile-menu").classList.toggle("active");
+    });
 
-        // Close profile menu when clicking outside
-        document.addEventListener("click", function(event) {
-            var profileMenu = document.getElementById("profile-menu");
-            if (!event.target.closest(".profile")) {
-                profileMenu.classList.remove("active");
+    // Keep profile menu open when clicking inside
+    document.getElementById("profile-menu").addEventListener("click", function(event) {
+        event.stopPropagation();
+    });
+
+    // Close profile menu when clicking outside
+    document.addEventListener("click", function(event) {
+        var profileMenu = document.getElementById("profile-menu");
+        if (!event.target.closest(".profile")) {
+            profileMenu.classList.remove("active");
+        }
+    });
+
+    // Sidebar Dropdown Toggle
+    document.querySelector(".dropdown-toggle").addEventListener("click", function(event) {
+        event.preventDefault();
+        this.closest(".dropdown").classList.toggle("active");
+    });
+
+    // Show alert when "Register" button is clicked
+    document.querySelectorAll(".register-button").forEach(button => {
+        button.addEventListener("click", function() {
+            if (confirm("Registration Successful! Proceed to Create Templates?")) {
+                window.location.href = "create_templates.html"; // Change to your actual page
             }
         });
+    });
+</script>
 
-        // Toggle sidebar dropdown when clicked
-        document.querySelector(".dropdown-toggle").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevents jumping to top of page
-            event.target.closest(".dropdown").classList.toggle("active");
-        });
-    </script>
+    
 </body>
 </html>
