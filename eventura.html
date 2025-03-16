@@ -131,12 +131,46 @@
             cursor: pointer;
             border-radius: 5px;
         }
+            /* EVENTURA Branding */
+        .brand-logo {
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+
+        .brand-logo:hover {
+            color: #ffcc00;
+        }
+
+        /* Dropdown animation */
+        .dropdown-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .dropdown.active .dropdown-content {
+            max-height: 200px; /* Adjust height as needed */
+        }
+
+        /* Better hover effect on buttons */
+        .register-button {
+            background-color: #007bff;
+            color: white;
+            transition: background 0.3s;
+        }
+
+        .register-button:hover {
+            background-color: #0056b3;
+        }
+
     </style>
 </head>
 <body>
     <div class="navbar">
         <div>
-            <strong href="index.html">EVENTURA</strong>
+            <a href="index.html" class="brand-logo">EVENTURA</a>
             <br><br><br>
             <a href="eventura.html">Events</a>
             <a href="#">Features ▼</a>
@@ -167,6 +201,7 @@
                     <a href="#">Reunions</a>
                     <a href="#">Tournaments/Sporting</a>
                 </div>
+                
             </div>
             <br>
             <a href="#">Create registration event</a>
@@ -193,26 +228,41 @@
         </div>
     </div>
 
+    
     <script>
         // Toggle profile dropdown on click
         document.getElementById("profile-button").addEventListener("click", function(event) {
-            event.stopPropagation(); // Prevents click from bubbling up
+            event.stopPropagation();
             document.getElementById("profile-menu").classList.toggle("active");
         });
-
-        // Close profile menu when clicking outside
+    
+        // Keep profile menu open when clicking inside
+        document.getElementById("profile-menu").addEventListener("click", function(event) {
+            event.stopPropagation();
+        });
+    
         document.addEventListener("click", function(event) {
             var profileMenu = document.getElementById("profile-menu");
             if (!event.target.closest(".profile")) {
                 profileMenu.classList.remove("active");
             }
         });
-
-        // Toggle sidebar dropdown when clicked
+    
+        // Sidebar Dropdown Toggle
         document.querySelector(".dropdown-toggle").addEventListener("click", function(event) {
-            event.preventDefault(); // Prevents jumping to top of page
-            event.target.closest(".dropdown").classList.toggle("active");
+            event.preventDefault();
+            this.closest(".dropdown").classList.toggle("active");
+        });
+    
+        // Show alert when "Register" button is clicked
+        document.querySelectorAll(".register-button").forEach(button => {
+            button.addEventListener("click", function() {
+                alert("Registration Successful! Proceed to Create Templates.");
+            });
         });
     </script>
+    
+
+   
 </body>
 </html>
