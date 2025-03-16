@@ -84,11 +84,12 @@ input, select, button {
     display: flex;
     gap: 10px;
 }
+;
 
 .buttons button {
     flex: 1;
-    background-color: #555;
-    color: white;
+    background-color: #817171;
+    color: rgb(238, 238, 238);
     border: none;
     cursor: pointer;
     padding: 10px;
@@ -96,7 +97,7 @@ input, select, button {
 }
 
 .buttons button:hover {
-    background-color: #333;
+    background-color: #2c2b2b;
 }
 
 .recover-section {
@@ -119,10 +120,4 @@ input, select, button {
 .recover-container img {
     width: 30px;
     height: 30px;
-}
-.phone {
-    width: 10px;
-    height: 10px;
-    
-
 }
