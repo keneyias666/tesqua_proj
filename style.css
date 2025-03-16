@@ -48,6 +48,7 @@ body {
 }
 
 .btn-primary {
+    text-decoration: none;
     background-color: #273346;
     color: white;
 }
