@@ -3,30 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="icon" href="letter E.png" 
-        type="image/x-icon">
+    <link rel="icon" href="letter E.png" type="image/x-icon">
+    <title>Log In</title>
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <div class="login-container">
         <h1 class="login-title">LOG IN</h1>
-        <label for="username">Username</label>
-        <input type="text" id="username" class="input-field" placeholder="Username">
-        
-        <label for="password">Password</label>
-        <input type="password" id="password" class="input-field" placeholder="Password">
-        
-        <button class="login-button" id="login-button">Log In</button>
-
-        <a href="#" class="forgot-password">Forgot password?</a>
-
-        <div class="separator">or</div>
-
-        
-
-        <a href="signup.html" class="signup-link">Sign up</a>
+        <form id="login-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" class="input-field" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" class="input-field" placeholder="Enter your password" required>
+            </div>
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+        <div class="separator">
+            <span>OR</span>
+        </div>
+        <div class="login-link">
+            <a href="signup.html">Don't have an account? Sign Up</a>
+        </div>
     </div>
-    <script src="login.js"></script>
 </body>
 </html>
